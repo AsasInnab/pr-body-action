@@ -1,0 +1,24 @@
+{
+  "name": "pr-body-action",
+  "version": "1.0.0",
+  "description": "This action prints extracts JIRA references in pull request body and branch name generates clickable URLs and appends them to the pull request body.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AsasInnab/pr-body-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AsasInnab/pr-body-action/issues"
+  },
+  "homepage": "https://github.com/AsasInnab/pr-body-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.3",
+    "@actions/github": "^2.1.1"
+  }
+}
