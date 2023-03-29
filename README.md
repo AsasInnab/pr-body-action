@@ -12,9 +12,14 @@ This action overwrites the pr body. Useful for when you want to append informati
 
 **Required** Github token
 
+## `pr_number`
+
+**optional** PR number which we want to update
+
 ## Example usage
 
     uses: AsasInnab/pr-body-action@v1
     with:
-    	body: "This is my new PR body :)"
-    	GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        body: "This is my new PR body :)"
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        pr_number: 2137
