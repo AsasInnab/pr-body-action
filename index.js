@@ -8,13 +8,13 @@ try {
   const providedPrNumber = core.getInput("pr_number");
 
   if (context.payload.pull_request == null) {
-    core.setFailed("No pull request found");
+    throw new Error("No pull request found");
   }
   if (!githubToken) {
-    core.setFailed("GITHUB_TOKEN input is required");
+    throw new Error("GITHUB_TOKEN input is required");
   }
   if (!body) {
-    core.setFailed("body input is required");
+    throw new Error("body input is required");
   }
 
   const { number: currentPrNumber } = context.payload.pull_request;
